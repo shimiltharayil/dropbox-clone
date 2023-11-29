@@ -1,11 +1,7 @@
-import React from 'react'
-
-type Props = {}
+type Props = {};
 
 function Dashboard({}: Props) {
-  return (
-    <div>Dashboard</div>
-  )
+  return <div>Dashboard</div>;
 }
 
-export default Dashboard
+export default Dashboard;
