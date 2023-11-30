@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="">
-      <div>
+      <div className="flex flex-col items-center lg:flex-row bg-[#1E1919] dark:bg-slate-800">
         <div className="p-10 flex flex-col bg-[#2B2929] dark:bg-slate-800 text-white space-y-5">
           <h1 className="text-5xl font-bold">
             Welcome to Dropbox.
@@ -26,7 +26,7 @@ export default function Home() {
             <ArrowRight className="ml-10" />
           </Link>
         </div>
-        <div>
+        <div className="bg-[#1E1919] dark:bg-slate-800 h-full p-10  ">
           <video autoPlay loop muted className="rounded-lg">
             <source src="https://aem.dropbox.com/cms/content/dam/dropbox/warp/en-us/overview/lp-header-graphite200-1920x1080.mp4" />
           </video>
