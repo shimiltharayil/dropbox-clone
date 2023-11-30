@@ -1,6 +1,7 @@
 import { SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
+import { ThemeToggler } from "./ThemeToggler";
 
 type Props = {};
 
@@ -20,6 +21,7 @@ function Header({}: Props) {
         <h1 className="font-bold text-xl">Dropbox</h1>
       </Link>
       {/* Theme Toggler  */}
+      <ThemeToggler />
       <UserButton afterSignOutUrl="/" />
       <SignedOut>
         <SignInButton afterSignInUrl="/dashboard" mode="modal" />
