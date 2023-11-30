@@ -1,3 +1,6 @@
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="">
@@ -9,9 +12,24 @@ export default function Home() {
             Storing everything for you and your business needs.All in one place
           </h1>
           <p className="pb-20">
-            Enchane your personal storage with Dropbox,offering a simple and efficient way to upload,organize,and access files from anywhere.
-            Securely store important documents and media, and experience the convencience of easy file management and sharing in centralized solution.
+            Enchane your personal storage with Dropbox,offering a simple and
+            efficient way to upload,organize,and access files from anywhere.
+            Securely store important documents and media, and experience the
+            convencience of easy file management and sharing in centralized
+            solution.
           </p>
+          <Link
+            href="/dashboard"
+            className="flex cursor-pointer bg-blue-500 p-5 w-fit "
+          >
+            Try it for free!
+            <ArrowRight className="ml-10" />
+          </Link>
+        </div>
+        <div>
+          <video autoPlay loop muted className="rounded-lg">
+            <source src="https://aem.dropbox.com/cms/content/dam/dropbox/warp/en-us/overview/lp-header-graphite200-1920x1080.mp4" />
+          </video>
         </div>
       </div>
     </main>
