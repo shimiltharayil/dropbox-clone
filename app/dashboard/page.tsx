@@ -8,6 +8,7 @@ type Props = {};
 function Dashboard({}: Props) {
   const { userId } = auth();
   const docResults = await getDocs(collection(db, "users", userId!, "files"));
+  const skeletonFiles = 
   return (
     <div>
       <Dropzone />
