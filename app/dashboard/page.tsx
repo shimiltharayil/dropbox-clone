@@ -20,8 +20,11 @@ async function Dashboard({}: Props) {
   }));
   console.log(skeletonFiles);
   return (
-    <div>
+    <div className="border-t bg-">
       <Dropzone />
+      <section>
+        h2
+      </section>
     </div>
   );
 }
