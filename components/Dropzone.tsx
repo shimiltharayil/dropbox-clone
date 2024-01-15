@@ -44,9 +44,9 @@ function Dropzone() {
     });
 
     const imageRef = ref(storage, `users/${user.id}/files/${docRef.id}`);
-    uploadBytes(imageRef, selectedFile).then(async (snapshot) => {
+    await uploadBytes(imageRef, selectedFile).then(async (snapshot) => {
       const downloadURL = await getDownloadURL(imageRef);
-      await updateDoc(doc(db, "users", user.id, "files ", docRef.id), {
+      await updateDoc(doc(db, "users", user.id, "files", docRef.id), {
         downloadURL: downloadURL,
       });
     });
